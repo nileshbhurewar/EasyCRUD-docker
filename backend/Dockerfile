@@ -21,7 +21,7 @@ WORKDIR /app
 COPY --from=build /opt/target/student-registration-backend-0.0.1-SNAPSHOT.jar .
 
 # Expose the port
-EXPOSE 8080
+EXPOSE 8081
 
 COPY wait-for-it.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/wait-for-it.sh
